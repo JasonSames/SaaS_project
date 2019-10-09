@@ -1,0 +1,16 @@
+Tip #1:
+    Read documentation:
+    You have to reserve an ample amount of time in reading documentation before
+    implementation. 
+        
+        
+RVM: Tool used to manage the version of Ruby and the tools we are using. 
+
+Gems: In the world of Ruby, Gems are a pre=packaged set of code in files.
+You can DL them from internet. It helps to not have to reinvent the wheel. 
+
+Ex... Utilizing gems - common practice.  
+Gems for ecommerce. (Easily configure ecommerce platform)
+Gems for authentication. (Login/Logout of sites)
+Gemset: List of all the gems you are going to use for your applicaions. 
+
