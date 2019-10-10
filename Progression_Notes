@@ -1,0 +1,49 @@
+Tip #1:
+    Read documentation:
+    You have to reserve an ample amount of time in reading documentation before
+    implementation. 
+        
+        
+RVM: Tool used to manage the version of Ruby and the tools we are using. 
+
+Gems: In the world of Ruby, Gems are a pre=packaged set of code in files.
+You can DL them from internet. It helps to not have to reinvent the wheel. 
+
+Ex... Utilizing gems - common practice.  
+Gems for ecommerce. (Easily configure ecommerce platform)
+Gems for authentication. (Login/Logout of sites)
+Gemset: List of all the gems you are going to use for your applicaions. 
+
+
+#Set username
+$ git config --global user.name "Jason Sames"
+
+#Set user_email
+$ git config --global user.email jasonasames@gmail.com
+
+#Run in root of directory of application you want to track
+$ git init
+
+#Adds any changes to the application so far. Tracks entire app on first use
+$ git add .
+
+#What git is aware of that needs to be committed
+$ git status
+
+#Adds note of first commit of application. 
+$ git commit -m "Initial commit"
+
+git: Tool used to build out web-applications. Allows us to take snapshots of
+our application code as we move along. Documents a history of changes. 
+
+'cat' command: outputs contents of a file. We give it the path to output. 
+
+#Creates ssh we can use for github.com
+$ cat ~/.ssh/id_rsa.pub
+
+
+#Got from github repository
+$ git remote add origin https://github.com/JasonSames/SaaS_project.git
+
+#Pushes framework date to GitHub (while in framework /saasapp)
+$ git push origin master 
