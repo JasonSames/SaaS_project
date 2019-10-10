@@ -47,3 +47,6 @@ $ git remote add origin https://github.com/JasonSames/SaaS_project.git
 
 #Pushes framework date to GitHub (while in framework /saasapp)
 $ git push origin master 
+
+#run server
+$ rails server -b $IP -p $PORT
