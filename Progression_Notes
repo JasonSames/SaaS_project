@@ -55,3 +55,24 @@ $ git push origin master
 
 #run server
 $ rails server -b $IP -p $PORT
+
+
+#making new page
+- dirty way: go into public folder 
+
+touch (create new file) public/index.html (path)
+
+-rails way
+$ touch app/controllers/pages_controller.rb (create this file)
+(in file)
+class PagesController < ApplicationController
+  def home
+  end 
+end 
+
+then touch app/views/pages
+
+#
+#FONTS fonts.google.com
+- find font - add to collection - copy link - add to layouts/application.html
+then go to assets/stylesheet/applicaions.css
