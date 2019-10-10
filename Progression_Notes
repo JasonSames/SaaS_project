@@ -1,3 +1,8 @@
+git add .
+git status
+git commit -m "Added a home view, controller action, route"
+git push origin pages_and_layout
+
 Tip #1:
     Read documentation:
     You have to reserve an ample amount of time in reading documentation before
