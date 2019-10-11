@@ -76,3 +76,14 @@ then touch app/views/pages
 #FONTS fonts.google.com
 - find font - add to collection - copy link - add to layouts/application.html
 then go to assets/stylesheet/applicaions.css
+
+#CREATING A NEW PAGE
+1. GO TO APPLICATION DIRECTORY (saasapp)
+2. OPEN pages_controller IN /saasapp/app/controllers/pages_controller.rb
+3. ADD FUNCTION
+    def about (<- page name)
+    end
+4. ADD file to views/pages using command
+  $ touch app/views/pages/about.html.erb
+5. EDIT ROUTES FILE IN config/routes
+  get 'about', to: 'pages#about'
