@@ -77,7 +77,7 @@ then touch app/views/pages
 - find font - add to collection - copy link - add to layouts/application.html
 then go to assets/stylesheet/applicaions.css
 
-#CREATING A NEW PAGE
+########CREATING A NEW PAGE###########
 1. GO TO APPLICATION DIRECTORY (saasapp)
 2. OPEN pages_controller IN /saasapp/app/controllers/pages_controller.rb
 3. ADD FUNCTION
@@ -87,3 +87,13 @@ then go to assets/stylesheet/applicaions.css
   $ touch app/views/pages/about.html.erb
 5. EDIT ROUTES FILE IN config/routes
   get 'about', to: 'pages#about'
+######################################
+
+# ADDING BOOTSTRAP CDN TO APPLICATION #
+1. OPEN GEM FILE 
+2. ADD IN gem 'bootstrap-sass', '3.3.7'
+3. bundle install
+4. app/assets/stylesheets (update application.css to .css.scss) to accept bootstrap
+5. add in 
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
