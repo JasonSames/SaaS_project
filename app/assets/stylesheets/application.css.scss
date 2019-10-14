@@ -17,22 +17,24 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Change headings color and font
 h1, h2, h3 {
   padding: 50px 70px 50px;
   font-family: 'Open Sans', 'sans-serif';
   color: white;
 }
 
+//Background gradient applied to back and navbar
 body, .navbar {
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-
+//Navbar hover features
 #Nav a:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a {
@@ -40,32 +42,23 @@ a {
     text-decoration: none;
 }
 
-#sidebar {
-  position: fixed;
-  top: 50px;
-  left: 220px;
-  width: 220px;
-  margin-left: -220px;
-  border: none;
-  border-radius: 0;
-  overflow-y: auto;
-  background-color: #222;
-  bottom: 0;
-  overflow-x: hidden;
-  padding-bottom: 40px;
+.search-bar, .navbar-nav > li{
+  padding-top: 15px;
+  padding-left: 120px;
+  padding-right: 10px;
+  text-align: center;
 }
 
-.side-bar > li > a {
-  color: #eee;
-  width: 220px;
-}
-
-.side-bar li a:hover,
-.side-bar li a:focus {
-  background-color: #333;
-}
-
-.tmargin {
-  margin-top: 15px;
+nav ul li {
+    list-style: none;
+    width: 4%;
+    float: left;
+    margin: 0% 1% 2% 2%;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+    height: 10px;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 

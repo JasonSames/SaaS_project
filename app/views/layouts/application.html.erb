@@ -9,44 +9,40 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">Admin Panel</a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">LOGO/SITENAME</a>
+  <!--<button class="navbar-toggler" type="" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    
+    <div class="search-bar">
+      <form align="right" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+      </form>
     </div>
-  </nav>
-  <div class="container-fluid">
-    <div class="col-md-3">
-  
-      <div id="sidebar">
-        <div class="container-fluid tmargin">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Google Search" />
-            <span class="input-group-btn">
-                <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-            </span>
-          </div>
-        </div>
-        <ul class="nav navbar-nav side-bar">
-          <li class="side-bar tmargin"><a href="#"><span class="glyphicon glyphicon-list">&nbsp;</span>Dashboard</a></li>
-          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 1</a></li>
-          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 2</a></li>
-          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 3</a></li>
-          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 4</a></li>
-          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-cog">&nbsp;</span>Settings</a></li>
-        </ul>
-      </div>
-    </div>
+    
   </div>
-  </div>
+</nav>
+
     <div class="container">
       <%= yield %>
     </div>
+    
 </body>
 </html>
