@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Saasapp</title>
+  <title>Ruby Website</title>
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,21 +9,44 @@
 </head>
 
 <body>
-  
-  <nav class="navbar navbar-light" style="background-color: #8CA7AB;">
-    <a class="navbar-brand" href="/">LOGO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="/about">About<span class="sr-only">(current)</span></a>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Admin Panel</a>
       </div>
     </div>
   </nav>
-
-  <div class="container">
-    <%= yield %>
+  <div class="container-fluid">
+    <div class="col-md-3">
+  
+      <div id="sidebar">
+        <div class="container-fluid tmargin">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Google Search" />
+            <span class="input-group-btn">
+                <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </div>
+        </div>
+        <ul class="nav navbar-nav side-bar">
+          <li class="side-bar tmargin"><a href="#"><span class="glyphicon glyphicon-list">&nbsp;</span>Dashboard</a></li>
+          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 1</a></li>
+          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 2</a></li>
+          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 3</a></li>
+          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-minus">&nbsp;</span>Link 4</a></li>
+          <li class="side-bar"><a href="#"><span class="glyphicon glyphicon-cog">&nbsp;</span>Settings</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+  </div>
+    <div class="container">
+      <%= yield %>
+    </div>
 </body>
 </html>

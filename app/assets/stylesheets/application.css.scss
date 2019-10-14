@@ -18,15 +18,54 @@
 @import 'bootstrap';
 
 h1, h2, h3 {
+  padding: 50px 70px 50px;
   font-family: 'Open Sans', 'sans-serif';
+  color: white;
 }
 
-body {
-  background:#8CA7AB;
-  font-family: "Open Sans";
-}
+body, .navbar {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
 
 #Nav a:hover {
     color: black;
     text-decoration: underline;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar {
+  position: fixed;
+  top: 50px;
+  left: 220px;
+  width: 220px;
+  margin-left: -220px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: #222;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+.side-bar > li > a {
+  color: #eee;
+  width: 220px;
+}
+
+.side-bar li a:hover,
+.side-bar li a:focus {
+  background-color: #333;
+}
+
+.tmargin {
+  margin-top: 15px;
+}
+
