@@ -17,31 +17,38 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
-//Change headings color and font
-h1, h2, h3 {
+// Typography Styles
+h1, h2, h3, a {
   padding: 50px 70px 50px;
   font-family: 'Open Sans', 'sans-serif';
   color: white;
 }
-
-//Background gradient applied to back and navbar
+ 
+// Background gradient 
 .navbar, .home-callout {
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
-//Navbar hover features
-#Nav a:hover {
-    color: black;
-    text-decoration: none;
+// Nav Styles
+nav ul li {
+    list-style: none;
+    width: 4%;
+    float: left;
+    margin: 0% 1% 2% 2%;
+    vertical-align: middle;
+    align-items: center;
+    height: 10px;
+    margin-top: 0%;
+    padding-top: 0%;
+    &:hover {
+      color: red;
+      opacity: 0.75;
+    }
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
+// Search bar 
 .search-bar, .navbar-nav > li{
   padding-top: 15px;
   padding-left: 120px;
@@ -49,22 +56,10 @@ a {
   text-align: center;
 }
 
-nav ul li {
-    list-style: none;
-    width: 4%;
-    float: left;
-    margin: 0% 1% 2% 2%;
-    vertical-align: middle;
-    text-align: center;
-    align-items: center;
-    height: 10px;
-    margin-top: 0%;
-    padding-top: 0%;
-}
-
+// home pages styles
 .home-callout {
-    margin-top: -20px;
-    margin-bottom: -20px;
-    padding-bottom: 60px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding-bottom: 60px;
 }
 
